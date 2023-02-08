@@ -17,7 +17,7 @@
 	<script>
 		function train() {
 			$.ajax({
-				url: 'http://localhost:3000/teach/?text='+$("#teach-text").val(),
+				url: 'https://deft-fudge-97d3b7.netlify.app/teach/?text='+$("#teach-text").val(),
 				method: 'GET',
 				success: function(data) {
 					console.log("Aluno: "+data);
@@ -35,7 +35,7 @@
 		}
 		function talk() {
 			$.ajax({
-				url: 'http://localhost:3000/talk/?text='+$("#client-text").val(),
+				url: 'https://deft-fudge-97d3b7.netlify.app/talk/?text='+$("#client-text").val(),
 				method: 'GET',
 				success: function(data) {
 					console.log("Eu: "+$("#client-text").val());
@@ -54,7 +54,7 @@
 		}
 		function compile() {
 			$.ajax({
-				url: 'http://localhost:3000/compile/',
+				url: 'https://deft-fudge-97d3b7.netlify.app/compile/',
 				method: 'GET',
 				success: function(data) {
 					console.log("Máquina: Compilado");
