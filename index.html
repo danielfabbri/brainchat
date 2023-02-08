@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Teste</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<!-- <script src="index.js"></script> -->
+</head>
+<body>
+	<h1>The Big Bot</h1>
+	<input id="teach-text"><button onclick="train()">Ensine</button><br><br>
+	<input id="client-text"><button onclick="talk()">Pergunte</button><br><br>
+
+	<button onclick="compile()">Compile</button>
+
+	<script>
+		function train() {
+			$.ajax({
+				url: 'http://localhost:3000/teach/?text='+$("#teach-text").val(),
+				method: 'GET',
+				success: function(data) {
+					console.log("Aluno: "+data);
+					var keys = Object.keys(data);
+					var prev = 0;
+					for (var i = 0; i < keys.length; i++ ) {
+						if (data[keys[i]] > prev) {
+							prev = i;
+						}
+					}
+					// console.log(keys[prev]);
+					// console.log(keys[0]);
+				}
+			});
+		}
+		function talk() {
+			$.ajax({
+				url: 'http://localhost:3000/talk/?text='+$("#client-text").val(),
+				method: 'GET',
+				success: function(data) {
+					console.log("Eu: "+$("#client-text").val());
+					console.log("Máquina: "+data);
+					var keys = Object.keys(data);
+					var prev = 0;
+					for (var i = 0; i < keys.length; i++ ) {
+						if (data[keys[i]] > prev) {
+							prev = i;
+						}
+					}
+					// console.log(keys[prev]);
+					// console.log(keys[0]);
+				}
+			});
+		}
+		function compile() {
+			$.ajax({
+				url: 'http://localhost:3000/compile/',
+				method: 'GET',
+				success: function(data) {
+					console.log("Máquina: Compilado");
+				}
+			});
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+[
+{
+    input: 'Olá, como você está hoje?',
+    output: 'Estou bem, obrigado por perguntar. Como posso ajudá-lo hoje?' 
+},
+{
+    input: 'Bom dia!',
+    output: 'Bom dia! Em que posso ajudá-lo hoje?' 
+},
+{
+    input: 'Como você está se sentindo hoje?',
+    output: 'Estou me sentindo bem, obrigado por perguntar. Como posso ajudá-lo?' 
+},
+{
+    input: 'Você teve um bom dia ontem?',
+    output: 'Sim, tive um ótimo dia ontem. Obrigado por perguntar. Como posso ajudá-lo hoje?' 
+},
+{
+    input: 'Você gosta de passear no parque?',
+    output: 'Sou apenas um chatbot, não tenho habilidades ou preferências humanas. Em que posso ajudá-lo hoje?' 
+},
+{
+    input: 'Você gosta de viajar?',
+    output: 'Sou apenas um chatbot, não tenho habilidades ou preferências humanas. Em que posso ajudá-lo hoje?' 
+},
+{
+    input: 'Preciso de ajuda para acessar minha conta',
+    output: 'Claro, eu posso ajudá-lo com isso. Qual é o seu nome de usuário ou endereço de e-mail associado à conta?' 
+},
+{
+    input: 'Esqueci minha senha',
+    output: 'Não há problema, podemos ajudá-lo a redefinir sua senha. Qual é o seu endereço de e-mail associado à conta?' 
+},
+{
+    input: 'Preciso de ajuda para atualizar meu perfil',
+    output: 'Claro, posso ajudá-lo com isso. Qual informação precisa ser atualizada em seu perfil?' 
+},
+{
+    input: 'Não consigo adicionar um novo usuário',
+    output: 'Entendi, vamos verificar juntos. Qual é o nome de usuário e endereço de e-mail do novo usuário?' 
+},
+{
+    input: 'O sistema está lento',
+    output: 'Desculpe por isso. Podemos verificar juntos e ver se há algum problema que possa ser resolvido.' 
+},
+{
+    input: 'Recebi uma mensagem de erro',
+    output: 'Desculpe pelo inconveniente. Se puder, por favor, compartilhe mais detalhes sobre a mensagem de erro para que possamos ajudá-lo da melhor maneira possível.' 
+}
+]
