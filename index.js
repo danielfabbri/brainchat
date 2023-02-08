@@ -18,6 +18,9 @@
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
   });
+  app.get('/', (req, res) => {
+    res.send('Hello World');
+  });
   app.get('/talk', (req, res) => {
     talk(req.query.text,res);
   });
